@@ -1,48 +1,25 @@
 package com.zemingo.baseserver.model;
 
+import java.util.Map;
+
 
 public class User  {
 
-	public String userName;
-	public String password;
-
-
-
-
-
-	//default constructor
-	public User(){
-
-	}	
-
-	public User(String userName, String pass){
-		this.userName = userName;
-		this.password = pass;
-	}
+//members:
 	
+	private String m_name;
 	
-	public String getUserName() {
-		return userName;
-	}
+	private String m_userName;
+	
+	private String m_password;
 
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+	private DepartmentEnum m_department;
 
-	public String getPassword() {
-		return password;
-	}
+	private AccessRightsEnum m_accessRights;
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+	private Map<Integer,AccessRightsEnum> m_projectsToAccess;
 
-	@Override
-	public String toString() {
-		return new StringBuffer("User Name: ").append(this.userName).append(" Password: ").append(this.password).toString();
-	}
-
-
-
+//methods:
+	
 
 }
