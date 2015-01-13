@@ -149,7 +149,7 @@ public class UserServices extends BaseServices{
 	@Produces(MediaType.APPLICATION_JSON)
 	@ApiOperation(value = "creating user")
 	public User createUser (@PathParam("name") String name,@PathParam("description") String description){
-		User user = new User(name,"git change");
+		User user = new User();
 		return user;
 	}
 	
