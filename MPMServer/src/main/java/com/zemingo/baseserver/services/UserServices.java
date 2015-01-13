@@ -53,6 +53,7 @@ public class UserServices extends BaseServices{
 		
 		//TODO: move to BL				
 		
+		//Niv comment
 		responseWrapper.setResponse(null, new LoginResponse(UUID.randomUUID().toString())); //for example
 		try {
 			responseJson = jsonMapper.writeValueAsString(responseWrapper);
