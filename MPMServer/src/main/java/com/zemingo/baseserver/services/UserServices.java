@@ -47,6 +47,7 @@ public class UserServices extends BaseServices{
 		System.out.println("got login request");
 		System.out.println(loginRequest.username);
 		
+		// Asaf Commit test
 		//TODO: do work on BL layer, update the DB if needed
 		
 		//TODO: return answer
